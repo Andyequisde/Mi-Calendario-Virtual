@@ -11,10 +11,12 @@
     <div class="container">
 
         <!-- opciones -->
-        <a href="Calendario.html">Calendario</a>
-        <a href="notas.html">Notas</a>
-        <a href="estadisticas.html">Estadisticas</a>
-
+        <div class="columns is-mobile">
+            <div class="column has-text-centered"><a href="Calendario.html">Calendario</a></div>
+            <div class="column has-text-centered"><a href="notas.html">Notas</a></div>
+            <div class="column has-text-centered"><a href="estadisticas.html">Estadisticas</a></div>
+        </div>
+        
         <!-- calendario -->
         <div class="my-4">
             <input type="date">
@@ -22,16 +24,12 @@
 
         <!-- opciones -->
         <div>
-            <div style="border-style: line; border: 1px solid black">
-                <a href="evento.html">
-                    <img class="imagen" src="/imagen/mas.png">
-                </a>
-                Anadir evento
-            </div>
             <div class="box">
                 <article class="media"> 
                     <div class="media-left">
-                        <img class="imagen" src="/imagen/mas.png">
+                        <a href="evento.html">
+                            <img class="imagen" src="/imagen/mas.png">
+                        </a>
                     </div>
                     <div class="media-content">
                         <div class="content">
@@ -41,7 +39,22 @@
                 </article>
             </div>
         </div>
-        <!-- http://jquense.github.io/react-big-calendar/examples/?path=/story/about-big-calendar--page -->
+    <br>
+        <div>
+            <div class="box">
+                <article class="media"> 
+                    <div class="media-left">
+                        <img class="imagen" src="/imagen/mas.png">
+                    </div>
+                    <div class="media-content">
+                        <div class="content">
+                            Añadir tarea
+                        </div>
+                    </div>
+                </article>
+            </div>
+        <div>
     </div>
 </body>
 </html>
+<!-- http://jquense.github.io/react-big-calendar/examples/?path=/story/about-big-calendar--page -->
