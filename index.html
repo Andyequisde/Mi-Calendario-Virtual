@@ -6,27 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Calendario virtual</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/calendar-gc.css">
 </head>
 
 <body>
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
     <div class="container-fluid">
         <br>
         <!-- opciones -->
-        <div class="columns is-mobile">
-            <div class="column has-text-centered"><a href="index.html">Calendario</a></div>
-            <div class="column has-text-centered"><a href="notas.html">Notas</a></div>
-            <div class="column has-text-centered"><a href="estadisticas.html">Estadisticas</a></div>
+        <div class="card">
+            <footer class="card-footer">
+                <a href="index.html" class="card-footer-item">Calendario</a>
+                <a href="notas.html" class="card-footer-item">Notas</a>
+                <a href="estadisticas.html" class="card-footer-item">Estadisticas</a>
+            </footer>
         </div>
-        
-        <!-- calendario -->
+        <!-- ----------------------------------------------------- calendario ------------------------------------------------------------------ -->
         <div class="my-4">
             <div id="calendar" style="padding: 1rem;"></div>
         </div>
-
-        <!-- opciones -->
+        <!-- --------------------------------------------------------opciones-------------------------------------------------------------------- -->
         <div>
             <div class="box">
                 <article class="media"> 
@@ -43,7 +44,7 @@
                 </article>
             </div>
         </div>
-    <br>
+        <br>
         <div>
             <div class="box">
                 <article class="media"> 
@@ -60,11 +61,13 @@
                 </article>
             </div>
         <div>
+        <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
     </div>
+    <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
 
 </body>
 
-
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="js/calendar-gc.min.js"></script>
@@ -74,12 +77,14 @@
             dayBegin: 0,
             prevIcon: '&#x3c;',
             nextIcon: '&#x3e;',
+            dayNames: ['Dom', 'Lun', 'Mart', 'Mier', 'Jue', 'Vie', 'Sab'],
+            monthNames:['Enero', 'Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Nomviembre','Diciembre'],
             onPrevMonth: function (e) {
-                console.log("prev");
+                console.log("Previo");
                 console.log(e)
             },
             onNextMonth: function (e) {
-                console.log("next");
+                console.log("Siguiente");
                 console.log(e)
             },
             events: [
@@ -117,5 +122,5 @@
         });
     })
 </script>
-
+<!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
 </html>
