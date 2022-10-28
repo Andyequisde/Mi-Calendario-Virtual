@@ -1,0 +1,33 @@
+{
+  "name": "mi-calendario-virtual",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">E.T. Nº12 D.E. 1º \"Libertador Gral. José de San Martín\"</h1>\r <p align=\"center\">\r   <img src=\"https://et12.edu.ar/imgs/et12.png\">\r </p>",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "node app.js",
+    "dev": "nodemon ./ --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andyequisde/Mi-Calendario-Virtual.git"
+  },
+  "author": "Andrés Revollo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andyequisde/Mi-Calendario-Virtual/issues"
+  },
+  "homepage": "https://github.com/Andyequisde/Mi-Calendario-Virtual#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.6",
+    "@babel/node": "^7.20.0",
+    "@babel/preset-env": "^7.19.4",
+    "dotenv": "^16.0.3",
+    "morgan": "^1.10.0"
+  }
+}
